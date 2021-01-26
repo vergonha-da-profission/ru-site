@@ -23,7 +23,9 @@
     },
     "dependencies": {
         "autoprefixer": "^9.8.6",
+        "instascan": "^1.0.0",
         "postcss": "^7.0.35",
+        "qr-scanner": "^1.2.0",
         "tailwindcss": "^2.0.1-compat"
     }
 }
