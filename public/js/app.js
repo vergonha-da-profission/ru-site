@@ -21360,7 +21360,8 @@ window._ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
  * CSRF token as a header based on the value of the "XSRF" token cookie.
  */
 
-window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js"); // window.instascan = require('instascan').default;
+
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
@@ -21385,8 +21386,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/devp/Documentos/github/vergonha-da-profission/ru-site/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/devp/Documentos/github/vergonha-da-profission/ru-site/resources/css/app.css */"./resources/css/app.css");
+__webpack_require__(/*! /home/gui/Documents/Faculdade/ENG/ru-site/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/gui/Documents/Faculdade/ENG/ru-site/resources/css/app.css */"./resources/css/app.css");
 
 
 /***/ })

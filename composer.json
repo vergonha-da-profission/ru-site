@@ -16,7 +16,8 @@
         "laravel/jetstream": "^2.1",
         "laravel/sanctum": "^2.6",
         "laravel/tinker": "^2.0",
-        "livewire/livewire": "^2.0"
+        "livewire/livewire": "^2.0",
+        "rmccue/requests": "^1.7"
     },
     "require-dev": {
         "facade/ignition": "^2.3.6",
