@@ -1,4 +1,7 @@
+
+<title>Login - RU</title>
 <x-guest-layout>
+    <link rel="icon" href={{ URL::asset('img/logo.ico') }} type="image/x-icon"/>
     <x-jet-authentication-card>
         <x-slot name="logo">
             <img src="{{ asset('img/logo.png') }}" />

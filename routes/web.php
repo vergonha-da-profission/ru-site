@@ -19,8 +19,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
+Route::middleware(['auth:sanctum', 'verified'])->get('/', function () {
+    return view('dashboard',  ['user' =>  auth()->user()]);
 });
 
 Route::post('/api/validate-user', function (Request $request) {
