@@ -1,0 +1,38 @@
+version: '2'
+
+services:
+  mariadb:
+    image: bitnami/mariadb:latest
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+      - MARIADB_USER=vdp
+      - MARIADB_PASSWORD=vdp
+      - MARIADB_ROOT_PASSWORD=vdp
+      - MARIADB_DATABASE=vdp
+    ports:
+      - 3306:3306
+  vdp:
+    tty: true
+    image: bitnami/laravel:latest
+    environment:
+      - DB_HOST=mariadb
+      - DB_USERNAME=vdp
+      - DB_DATABASE=vdp
+      - DB_PASSWORD=vdp
+      - DB_ROOT_PASSWORD=vdp
+    depends_on:
+      - mariadb
+    ports:
+      - 80:3000
+    volumes:
+      - ./:/app
+  phpmyadmin:
+    depends_on:
+      - mariadb
+    image: phpmyadmin/phpmyadmin
+
+    ports:
+      - 8080:80
+    environment:
+      PMA_HOST: mariadb:3306
+

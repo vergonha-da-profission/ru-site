@@ -26,7 +26,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/', function () {
 Route::post('/api/validate-user', function (Request $request) {
     $user_id = $request->userId;
     $value = -2.5;
-    $base_url = 'http://localhost:3000';
+    $base_url = 'http://18.191.1.167:3000';
 
     $url = "$base_url/api/transaction/debt";
 
